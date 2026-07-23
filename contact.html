@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>צור קשר</title>
+    <link href="./app.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header id="title">
+    <img id="logo" src="./FLOW/FLOW.webp" alt="FLOW">
+       <br>
+       <div class="FlexHeader">
+       <a class="links" id="link1" href="./HomePage.html">דף הבית</a>
+       <div class="dropdown">
+            <a class="links" id="link2" href="#">המוצרים שלנו</a>
+            <div class="dropdown-content">
+                <a href="./SWEET_LIKE.html">SWEET LIKE</a>
+                <a href="./FRESH.html">FRESH</a>
+                <a href="./BOHO.html">BOHO</a> 
+            </div>
+        </div>
+       <a class="links" id="link3" href="./OUR_STORY.html">הסיפור שלנו</a>
+       <a class="links" id="link4" href="./Club.html">מועדון</a>
+       <a class="links" id="link5" href="./Branches.html">סניפים</a>
+       </div>
+    </header>
+
+    <main>
+        <h1 id="titleContact">דברו איתנו</h1>
+        <form id="formContact">
+            <div class="fillContact">
+                <label for="fullname" class="TextContact">שם מלא:</label>
+                <input id="fullname" type="text" placeholder="הקלידי שם מלא" required>
+            </div>
+
+            <div class="fillContact">
+                <label for="email" class="TextContact">אימייל:</label>
+                <input type="email" id="email" placeholder="example@gmail.com" required>
+            </div>
+
+            <div class="fillContact">
+                <label for="phone" class="TextContact">טלפון:</label>
+                <input type="tel" id="phone" placeholder="052-3456789" required>
+            </div>
+
+            <div class="fillContact">
+                <label for="subject" class="TextContact">נושא הפנייה:</label>
+                <select id="subject">
+                    <option>הזמנה</option>
+                    <option value="questions">שאלות</option>
+                    <option value="feedback">משוב</option>
+                    <option value="other">אחר</option>
+                </select>
+            </div>
+
+            <div class="fillContact">
+                <label class="TextContact">איך לחזור אליך?</label>
+                <input type="radio" id="phone-opt" name="contactRadio">
+                <label for="phone-opt" class="TextContact">טלפון</label>
+                
+                <input type="radio" id="email-opt" name="contactRadio">
+                <label for="email-opt" class="TextContact">אימייל</label>
+            </div>
+
+            <div class="fillContact">
+                <label for="massageContact" class="TextContact">תוכן הפנייה:</label>
+                <textarea id="massageContact" required></textarea>
+            </div>
+            <button type="submit" id="submitContact">שליחה</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footeritem">
+            <h3 class="titlefooter">follow us</h3>
+            <div id="follow">
+                <span class="follow">
+                    <i class="fa-brands fa-instagram"></i>
+                    <a class="TextFooter" href="#">Instagram</a>
+                </span>
+                <span class="follow">
+                    <i class="fa-brands fa-tiktok"></i>
+                    <a class="TextFooter" href="#">TikTok</a>
+                </span>
+                <span class="follow">
+                    <i class="fa-brands fa-facebook"></i>
+                    <a class="TextFooter" href="#">facebook</a>
+                </span>
+            </div>
+        </div>
+        <div class="footeritem">
+            <h3 class="titlefooter">Help & Info</h3>
+            <a class="LinkFooter" href="./returns.html">משלוחים החזרות והחלפות</a>
+            <a class="LinkFooter" href="#">שאלות ותשובות</a>
+            <a class="LinkFooter" href="./contact.html">צור קשר</a>
+            <a class="LinkFooter" href="#">תקנון האתר</a>
+        </div>
+        <div>
+            <h3 class="titlefooter">FLOW</h3>
+            <p class="TextFooter">@FLOW-כל הזכויות שמורות</p>
+            <p class="TextFooter">Design & Code by Bat-sheva Peterburgsky</p>
+        </div>
+    </footer>
+</body>
+</html>

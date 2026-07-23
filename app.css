@@ -1,0 +1,822 @@
+body {
+    text-align: center;
+    direction: rtl;
+    background-color:#faf4f6;
+    margin: 0;
+    padding: 0;
+}
+/*HEADER*/
+#logo {
+    height: 100px;
+    width: auto;
+    margin: 1px 1px -10px 1px;
+}
+
+#title {
+    height: 150px;
+    width: auto;
+    background-color:#ffe7ed;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08) ;
+    padding-top: 15px;
+    padding-bottom: 0.5px;
+    position:sticky; /*הדבקה של הכותרת שלא תזוז בגלילה*/
+    top: 0;/*שידבק לתקרה*/
+    margin: 5px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.links {
+    font-family:'Varela Round',sans-serif;
+    margin: 15px;
+}
+a{
+    color: rgb(0, 0, 0);
+    text-decoration:none;
+}
+a:hover{
+    color: rgb(178, 71, 71);
+}
+.FlexHeader{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0px;
+}
+/*Club.html*/
+#cclub0{
+    font-size: 50px;
+    color: #e37591;
+    font-family: 'Heebo' , sans-serif;
+    letter-spacing: 3px; /*רווח בין האותיות*/
+    font-weight: 900;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+.cclub{
+    font-size: 20px;
+    font-family: 'Varela Round' , sans-serif;
+    color: #737373;
+    line-height: 1.3;
+}
+#cclub4{
+    font-size: 28px;
+    font-family: 'Varela Round' , sans-serif;
+    color:#e37591;
+    margin-bottom: 20px;
+}
+#bclub{
+    font-size: 20px;
+    font-family: 'Varela Round' , sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 50px; 
+    cursor: pointer; 
+}
+#bclub:hover {
+    background-color: #e37591; 
+    transform: scale(1.05); 
+}
+#allfill{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-family: system-ui, sans-serif;
+    background-color: #ffffff;
+    box-shadow: 0 10px 40px rgba(227, 117, 145, 0.2);
+    border: 2px solid #ffcfdb;
+    max-width: 350px;
+    text-align: center;
+    border-radius:14px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.fill{
+    margin: 10px;
+    text-align: center;
+    color: #c54d6b;
+}
+.infill{
+    background-color: #faf4f6;
+    border-radius: 6px;
+    font-family: 'Varela Round', sans-serif;
+}
+input[type="checkbox"] {
+    accent-color: #faf4f6;
+    cursor: pointer;
+}
+#bd{
+    font-size: 10px;
+    margin-top: -10px;
+}
+/* תפריט נפתח */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 120%;
+    background-color: #ffffff;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 10px 0;
+    z-index: 1; /*שכבה במסך*/
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+.dropdown-content a:hover {
+    background-color: #f1efef;
+    border-radius: 5px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*our_story.html*/
+#StoryTitle{
+    color: #e37591;
+    font-size: 35px;
+    font-family: 'Heebo' , sans-serif;
+    font-weight: 900;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+#StoryText{
+    font-size: 17px;
+    font-family: 'Varela Round' , sans-serif;
+    color: #737373;
+    line-height: 1.3;
+}
+#StoryText1{
+    font-size: 27px;
+    font-family: 'Varela Round' , sans-serif;
+    color:#e37591;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+}
+.StoryAllButton{
+    font-family: 'Rubik', 'Heebo', sans-serif;
+    border-radius: 60px;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing:0.8px;
+    font-weight: bold;
+    color: #ffffff;
+    box-shadow: 0.5px 0.5px 3px #837f7f;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+#StoryButton{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 25px;
+    flex-wrap: wrap;
+}
+#StoryButtonS{
+    background-color: #de7590;
+}
+#StoryButtonF{
+    background-color: #7ae3e6;
+}
+#StoryButtonB{
+    background-color: #dec7b5;
+}
+.StoryAllButton:hover{
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    filter: brightness(1.07);
+    transform: scale(1.1);
+}
+/*branches.html*/
+#Branches{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    height: auto;
+
+}
+.allbranches{
+    border-radius: 15px;
+    height: 260px;
+    width: 360px;
+    margin-top: 10px;
+    text-align: center;
+    margin-right:auto;
+    margin-left: auto;
+    box-shadow: 0.5px 0.5px 2px 1px #d0cfcf;
+}
+#Branches-title{
+    color: #fd84a3;
+    font-size: 35px;
+    font-family: 'Heebo' , sans-serif;
+    font-weight: 900;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+#Branches-text{
+    font-size: 20px;
+    font-family: 'Varela Round' , sans-serif;
+    color: #737373;
+    line-height: 1.3;
+}
+.NameBranches{
+    font-size: 28px;
+    font-family: 'Varela Round' , sans-serif;
+    color:#ffffff;
+    margin-bottom: 20px;
+}
+.ItemsBranches{
+    font-size: 17px;
+    font-family: 'Varela Round' , sans-serif;
+    color: #737373;
+    line-height: 1.3;
+}
+.waze-link{
+    color: #000000;
+    font-weight: bold;
+    font-size: 17px;
+    font-family:'Rubik', 'Heebo', sans-serif;
+}
+.waze-link:hover{
+    color: #f34878;
+}
+#Branches1{
+    background-color: #ff97b1;
+}
+#Branches2{
+    background-color: #b2e2f2;
+}
+#Branches3{
+    background-color: #d1f0d1;
+}
+#Branches4{
+    background-color: #f9e1b2;
+}
+#Branches5{
+    background-color: #e0c3fc;
+}
+#Branches6{
+    background-color: #fcd5ce;
+}
+/*המוצרים שלנו
+SWEET_LIKE.html
+FRESH.html
+BOHO.html*/
+#AllProducts{
+    width: 80%;
+}
+#Skin-Body_Care{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.ProductsCards{
+    background-color:#ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    height: 400px;
+    width: 300px;    
+}
+.ImgProduct{
+    height: 300px;
+    border-radius: 5px;
+}
+#Hair_Accessories{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+#Beauty_Makeup-Tools{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+#main-content{
+    display: flex;
+    align-items: flex-start; 
+    width: 100%;
+}
+#side-nav{
+    height: 100%;
+    width: 15%;
+    position:sticky;
+    top: 250px; /*המרחק שNAV נדבק מלמעלה*/
+    margin-left: 20px;
+}
+#side-nav li{
+    font-family: system-ui, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    list-style: none;
+}
+#side-nav a{
+    text-shadow: 2px 2px 2px #c2bebe;
+    display:flex;
+    align-items: center;
+    color: #444444;
+    opacity: 0.95;
+}
+#side-nav a:hover{
+    opacity: 0.7;
+}
+#TitleSweetNav{
+    background: linear-gradient(to right, #e36685, #e2c9bc);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+    font-family: 'Heebo' , sans-serif;
+    font-weight: 900;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+}
+#TitleFreshNav{
+    background: linear-gradient(to right, #6cbcc7, #e1d0c6);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+    font-family: 'Heebo' , sans-serif;
+    font-weight: 900;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+}
+#TitleBohoNav{
+    background: linear-gradient(to right, #F4A482,#e2c9bc);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+    font-family: 'Heebo' , sans-serif;
+    font-weight: 900;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+}
+.TitleSweet{
+    color: #e36685;
+    font-size: 35px;
+    font-family: 'Heebo' , sans-serif;
+    font-weight: 900;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+.TitleFresh{
+    color: #6cbcc7;
+    font-size: 35px;
+    font-family: 'Heebo' , sans-serif;
+    font-weight: 900;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+.TitleBoho{
+    color: #e2c9bc;
+    font-size: 35px;
+    font-family: 'Heebo' , sans-serif;
+    font-weight: 900;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+.TitleProducts{
+    color: #444444;
+    font-size: 15px;
+    font-family: 'Varela Round' , sans-serif;
+    font-weight: 600;
+    margin-top: 12px;
+    letter-spacing: 0.5px;
+}
+.ProductsCards:hover{
+    transform: translateY(1px);
+    box-shadow: 5px 15px 20px 0px rgba(0, 0, 0, 0.05);
+}
+.icon{
+    position: absolute;
+    top: 8px;
+    right: 22px;
+    font-size: 35px;
+    cursor: pointer;
+    opacity: 0;
+}
+.ProductsCards:hover .icon{
+    opacity: 1;
+}
+.ProductsCards:hover .icon:hover{
+    color: #cebfc2;
+}
+.AddProductsS{
+    font-size: 8px;
+    font-family: 'Varela Round' , sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 50px; 
+    cursor: pointer;
+}
+.AddProductsS:hover{
+    background-color: #e37591; 
+    transform: scale(1.05); 
+}
+.AddProductsF{
+    font-size: 8px;
+    font-family: 'Varela Round' , sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 50px; 
+    cursor: pointer;
+}
+.AddProductsF:hover{
+    background-color: #6cbcc7; 
+    transform: scale(1.05); 
+}
+.AddProductsB{
+    font-size: 8px;
+    font-family: 'Varela Round' , sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 50px; 
+    cursor: pointer;
+}
+.AddProductsB:hover{
+    background-color: #e2c9bc; 
+    transform: scale(1.05); 
+}
+.FlexProducts{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.PriceProducts{
+    font-size: 16px;
+    font-family: 'Varela Round', sans-serif;
+    color: #444444;
+}
+/*footer*/
+.TextFooter{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 15px;
+}
+.LinkFooter{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+.LinkFooter:hover {
+    color: #e37591;
+}
+#follow{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.footeritem{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.follow{
+    margin: 5px;
+}
+.follow i {
+    font-size: 18px;
+    display: inline;
+    width: 25px;
+}
+.titlefooter{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 25px;
+    margin: 6px;
+    text-transform: uppercase;
+    color: #e37591
+}
+footer{
+    background:linear-gradient(180deg, #fdfbfb, #fdfbfb);
+    height: 130px;
+    width: 98%;
+    bottom: 0;
+    margin: 25px 5px 5px 5px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    box-shadow: 0px -1.5px 10px rgba(0,0,0,0.05);
+}
+/*returns.html*/
+table{
+    border-collapse: collapse;
+    width: 70%;
+    text-align: center;
+    justify-self: center;
+    margin: 20px;
+}
+th,td{
+    border: #444444 solid 1px;
+    padding: 10px 20px 10px 20px;
+    font-size: 15px;
+    font-family: 'Varela Round' , sans-serif;
+}
+#TitleReturns{
+    color: #e37591;
+    font-size: 35px;
+    font-family: 'Heebo' , sans-serif;
+    font-weight: 900;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+/*contact.html*/
+#formContact{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-family: system-ui, sans-serif;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(227, 117, 145, 0.15);
+    border: 2px solid #ffcfdb;
+    max-width: 350px;
+    text-align: center;
+    border-radius:14px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.fillContact{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content:center;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.TextContact{
+    margin: 5px;
+    text-align: center;
+    color: #c54d6b;
+}
+input[type="radio"] {
+    accent-color: #faf4f6;
+    cursor: pointer;
+}
+#submitContact{
+    font-size: 20px;
+    font-family: 'Varela Round' , sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 50px; 
+    cursor: pointer; 
+    margin: 10Px auto;
+}
+#submitContact:hover {
+    background-color:#e37591; 
+    color: #ffffff;
+    transform: scale(1.05); 
+}
+#titleContact{
+    font-size: 50px;
+    color: #e37591;
+    font-family: 'Heebo' , sans-serif;
+    letter-spacing: 3px; /*רווח בין האותיות*/
+    font-weight: 900;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+/*homepage.html*/
+#middleHome{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    width: 95%;
+    margin: 40px auto;
+}
+.collection-window {
+    position: relative;
+    display: block;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
+}
+.imgMiddle{
+    height: 450px;
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover; /*חותך את התמונה יפה*/
+}
+.window-title {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 900;
+    color: #e37591;
+    background-color: white;
+    padding: 15px;
+    letter-spacing: 2px; /*רווח בין האותיות*/
+}
+.collection-window:hover .window-title {
+    color: #000;
+    background-color: #faf4f6;
+}
+#imgStart{
+    width: 100%;
+    height: 410px;
+    margin-top: 20px;
+}
+#imgHome{
+    width: 100%;
+    height: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#OneHome{
+    background-image: url('./FLOW/HomePage/רקע.png');
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+#titleHome{
+    color: #ffffff;
+    font-size: 50px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 900;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 5px;
+}
+#textHome{
+    color: #ffffff;
+    font-size: 30px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    margin-top: 5px;
+}
+
+/*כללי*/
+@media (max-width: 600px) {
+    /* header */
+    #title {
+        height: auto;
+        padding-bottom: 20px;
+        position: relative;/* מבטל את ההדבקה */
+    }
+
+    .FlexHeader {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #logo {
+        height: 80px;
+        margin-bottom: 10px;
+    }
+    /*דף הבית*/
+    #middleHome {
+        grid-template-columns: 1fr; 
+    }
+    
+    .collection-window img {
+        height: 300px; 
+    }
+    /* מוצרים */
+    #main-content {
+        flex-direction: column;
+    }
+
+    #side-nav {
+        width: 100%; 
+        height: auto;
+        position: static;
+        margin-left: 0;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ffe7ed;
+    }
+
+    #side-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 0;
+    }
+
+    #AllProducts {
+        width: 100%;
+    }
+
+    #Skin-Body_Care, #Hair_Accessories, #Beauty_Makeup-Tools {
+        grid-template-columns: 1fr; 
+        gap: 30px;
+    }
+
+    .ProductsCards {
+        margin: 0 auto; 
+    }
+
+    /* סניפים */
+    #Branches {
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .allbranches {
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    /* טפסים */
+    #formContact, #allfill {
+        width: 90%;
+        max-width: none;
+        padding: 15px;
+    }
+
+    /* צור קשר */
+    .fillContact {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 15px;
+    }
+
+    .TextContact, .fillContact label {
+        width: 100%;
+        text-align: right;
+        margin-bottom: 5px;
+    }
+
+    input:not([type="radio"]), select, textarea {
+        width: 100%;
+    }
+    
+    /* בדף מועדון - מסדר את השורות */
+    .fill {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: right;
+    }
+    
+    .infill {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* טבלת החזרות */
+    table {
+        width: 95%;
+        font-size: 12px;
+    }
+    
+    th, td {
+        padding: 5px;
+    }
+
+    /* Footer */
+    footer {
+        grid-template-columns: 1fr;
+        height: auto;
+        text-align: center;
+        gap: 30px;
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 20px;
+    }
+    
+    .footeritem {
+        align-items: center;
+    }
+}
+
+@media (max-width: 1100px) {
+    
+    #Branches, 
+    #Skin-Body_Care, 
+    #Hair_Accessories, 
+    #Beauty_Makeup-Tools {
+        grid-template-columns: repeat(2, 1fr);
+        width: 95%;
+        margin: 0 auto;
+    }
+}
